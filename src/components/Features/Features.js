@@ -4,6 +4,7 @@ import React from 'react';
 import './Features.css';
 
 import img from '../../img/5e9d0d96eda699382d09d1ee.png'
+import Main from '../Main/Main';
 // const rocketImages = {
 //     'Falcon1': 'falcon-1',
 //     'Falcon 9': 'falcon-9',
@@ -14,13 +15,14 @@ import img from '../../img/5e9d0d96eda699382d09d1ee.png'
 
 
 const Features = ({ name, height, diameter, mass, payload_weights, description, id }) => {
-    
+
     return (
         <>
+            <Main />
             <section className="features">
                 <h2 className="features-title">
                     {name} <br />Overview
-		</h2>
+        		</h2>
                 <div className="overview">
 
                     <table className="table">
@@ -51,7 +53,7 @@ const Features = ({ name, height, diameter, mass, payload_weights, description, 
                         </thead>
                     </table>
                     <img
-                        src= {img}
+                        src={img}
                         alt="rocket"
                         className="rocket"
                     />
